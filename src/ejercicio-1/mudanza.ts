@@ -1,8 +1,4 @@
 import { Enser } from './enser';
-import { Electrodomestico } from './electrodomestico';
-import { Herramientas } from './herramientas';
-import { Mueble } from './mueble';
-import { Ropa } from './ropa';
 import { Caja } from './caja';
 
 export class Mudanza<T extends Enser> {
@@ -29,30 +25,3 @@ export class Mudanza<T extends Enser> {
   }
 }
 
-let mudanza = new Mudanza<Enser>();
-let caja = new Caja<Enser>();
-let caja2 = new Caja<Enser>();
-let electrodomestico = new Electrodomestico('nevera');
-let herramientas = new Herramientas('martillo');
-let mueble = new Mueble('mesa');
-let ropa = new Ropa('pantalones');
-mudanza.add_caja(caja);
-mudanza.add_caja(caja2);
-mudanza.add_object_to_box(0, electrodomestico);
-mudanza.add_object_to_box(0, herramientas);
-mudanza.add_object_to_box(1, mueble);
-mudanza.add_object_to_box(1, ropa);
-console.log(mudanza.get_cajas());
-mudanza.show_objects_from_box(0);
-mudanza.show_objects_from_box(1);
-mudanza.delete_object_from_box(0, electrodomestico);
-mudanza.delete_object_from_box(1, ropa);
-console.log(mudanza.get_cajas());
-console.log(mudanza.find_object_from_box(0, electrodomestico.get_nombre()));
-console.log(mudanza.find_object_from_box(1, ropa.get_nombre()));
-console.log(mudanza.find_object_from_box(1, mueble.get_nombre()));
-console.log(mudanza.find_object_from_box(0, ropa.get_nombre()));
-console.log(mudanza.find_object_from_box(1, electrodomestico.get_nombre()));
-console.log(mudanza.find_object_from_box(0, mueble.get_nombre()));
-console.log(mudanza.find_object_from_box(0, 'martillo'));
-console.log(mudanza.find_object_from_box(0, herramientas.get_nombre()));
