@@ -1,5 +1,8 @@
 import { Factura } from "./factura";
 
+/**
+ * Clase que representa una factura en formato PDF
+ */
 export class Html implements Factura {
   vendedor: string;
   comprador: string;
@@ -18,30 +21,66 @@ export class Html implements Factura {
     this.total = total;
     this.fecha = fecha;
   }
+  /**
+   * Getter del vendedor de la factura.
+   * @returns Devuelve el vendedor de la factura.
+   */
   get_vendedor() {
     return this.vendedor;
   }
+  /**
+   * Getter del comprador de la factura.
+   * @returns Devuelve el comprador de la factura.
+   */
   get_comprador() {
     return this.comprador;
   }
+  /**
+   * Getter del importe de la factura.
+   * @returns Devuelve el importe de la factura.
+   */
   get_importe() {
     return this.importe;
   }
+  /**
+   * Getter del concepto de la factura.
+   * @returns Devuelve el concepto de la factura.
+   */
   get_concepto() {
     return this.concepto;
   }
+  /**
+   * Getter del tipo de fichero de la factura.
+   * @returns devuelve el fichero de la factura.
+   */
   get_fichero() {
     return this.fichero;
   }
+  /**
+   * Getter de los impuestos de la factura.
+   * @returns Devuelve los impuestos de la factura.
+   */
   get_impuestos() {
     return this.impuestos;
   }
+  /**
+   * Getter del total de la factura.
+   * @returns Devuelve el total de la factura.
+   */
   get_total() {
     return this.total;
   }
+  /**
+   * Getter de la fecha de la factura.
+   * @returns Devuelve la fecha de la factura.
+   */
   get_fecha() {
     return this.fecha;
   }
+  /**
+   * Método que devuelve la factura en formato HTML.
+   * @returns Devuelve la factura en formato HTML.
+   */
   to_html() {
     return `
       <html>

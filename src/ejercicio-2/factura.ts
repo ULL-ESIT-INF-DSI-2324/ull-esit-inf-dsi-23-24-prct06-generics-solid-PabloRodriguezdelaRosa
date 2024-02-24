@@ -1,3 +1,6 @@
+/**
+ * Interfaz que representa una factura
+ */
 export interface Factura {
   vendedor: string;
   comprador: string;
