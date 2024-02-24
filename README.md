@@ -13,6 +13,9 @@
   - [Ejercicio 3 - Gestor de ficheros](#ejercicio-3---gestor-de-ficheros)
   - [Ejercicio 4 - Impresoras y escáneres](#ejercicio-4---impresoras-y-escáneres)
   - [Ejercicio 5 - Servicio de mensajería](#ejercicio-5---servicio-de-mensajería)
+  - [Informe Coverage](#informe-coverage)
+  - [Conclusiones](#conclusiones)
+  - [Bibliografía](#bibliografía)
 
 
 ## Introducción
@@ -187,3 +190,21 @@ Los ficheros se pueden observar en el directorio: `src/ejercicio-4`
     Esto reduce el acoplamiento y facilita la extensión y el mantenimiento del código, ya que las clases de alto nivel no dependen de las implementaciones concretas de las clases de bajo nivel, cumpliendo así con el principio DIP.
 
 Los ficheros se pueden observar en el directorio: `src/ejercicio-5`
+
+## Informe Coverage
+
+[![Coverage Status](https://coveralls.io/repos/github/ULL-ESIT-INF-DSI-2324/ull-esit-inf-dsi-23-24-prct06-generics-solid-PabloRodriguezdelaRosa/badge.svg?branch=main)](https://coveralls.io/github/ULL-ESIT-INF-DSI-2324/ull-esit-inf-dsi-23-24-prct06-generics-solid-PabloRodriguezdelaRosa?branch=main)
+
+## Conclusiones
+
+Durante la realización de la práctica 6 de la asignatura de desarrollo de sistemas informáticos, hemos adquirido conocimientos valiosos sobre herramientas fundamentales en el desarrollo de software. Entre estas herramientas, destacamos el uso de Coverage, que nos permite evaluar el porcentaje de código que está cubierto por nuestros tests, brindándonos una visión clara de la calidad de nuestra suite de pruebas.
+
+Además, como parte de nuestro enfoque continuo en la mejora de la calidad del código, hemos consolidado el uso de herramientas como Typedoc y la metodología TDD (Test-Driven Development), que venimos aplicando desde la práctica 4. Estas herramientas nos permiten documentar nuestro código de manera efectiva y garantizar su correcto funcionamiento mediante la escritura de pruebas automatizadas antes de la implementación del código.
+
+Por otro lado, el desarrollo de esta práctica nos ha permitido profundizar en conceptos fundamentales como los principios SOLID, los cuales nos proporcionan pautas para escribir un código más modular, mantenible y escalable. Asimismo, hemos explorado el uso de clases e interfaces genéricas, que nos brindan una mayor flexibilidad y reutilización de código al trabajar con diferentes tipos de datos de manera más abstracta y eficiente.
+
+## Bibliografía
+
+- [Práctica 6 Clases e interfaces genéricas. Principios SOLID](https://ull-esit-inf-dsi-2324.github.io/prct06-generics-solid/)
+- [Principios Solid](https://ull-esit-inf-dsi-2324.github.io/typescript-theory/typescript-solid.html)
+- [Clases e interfaces genéricas](https://ull-esit-inf-dsi-2324.github.io/typescript-theory/typescript-generics.html)
