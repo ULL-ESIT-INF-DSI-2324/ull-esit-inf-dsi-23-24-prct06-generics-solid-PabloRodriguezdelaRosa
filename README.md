@@ -19,9 +19,96 @@
 
 ## Ejercicio 1 - La mudanza
 
+Para llevar a cabo el desarrollo de este ejercicio, hemos creado las siguientes clases o interfaces:
+
+1. Interfaz Enser:
+
+    Define una propiedad nombre que representa un artículo de mudanza.
+
+2. Clases de Artículos de Mudanza (Electrodomestico, Herramientas, Mueble, Ropa):
+
+    - Implementan la interfaz Enser.
+    - Representan diferentes tipos de artículos de mudanza.
+    - Cada clase tiene un constructor que toma el nombre del artículo de mudanza como parámetro.
+  
+3. Clase Caja<T>:
+
+   - Gestiona una lista de artículos de mudanza.
+   - Permite agregar, eliminar, mostrar y buscar artículos en la caja.
+   - Utiliza un tipo genérico T que extiende la interfaz Enser, lo que permite la flexibilidad para trabajar con diferentes tipos de artículos.
+  
+4. Clase Mudanza<T>:
+
+   - Gestiona un conjunto de cajas de mudanza.
+   - Permite agregar cajas a la mudanza.
+   - Proporciona métodos para manipular los artículos dentro de las cajas, como agregar, eliminar, mostrar y buscar.
+
+Los principios SOLID que se siguen para este ejercicio son:
+
+1. Principio de Responsabilidad Única (SRP):
+
+   - Cada clase y cada interfaz en el código tienen una única responsabilidad clara y bien definida.
+   - La interfaz Enser define la propiedad nombre, representando un artículo de mudanza.
+   - Las clases Electrodomestico, Herramientas, Mueble y Ropa implementan Enser, centrándose exclusivamente en la representación de cada tipo de artículo.
+   - La clase Caja gestiona una lista de artículos de mudanza y proporciona métodos para su manipulación.
+   - La clase Mudanza gestiona un conjunto de cajas de mudanza.
+  
+2. Principio Abierto/Cerrado (OCP):
+
+   - La lógica de negocio de cada clase es extensible sin necesidad de modificar el código existente.
+   - La clase Caja puede contener cualquier tipo de artículo de mudanza, permitiendo la adición de nuevos tipos de artículos sin modificar la clase.
+   - La clase Mudanza puede gestionar cualquier tipo de caja de mudanza, facilitando su extensión para manejar diferentes tipos de mudanzas.
+  
+3. Principio de Inversión de Dependencias (DIP):
+
+   - Las clases dependen de abstracciones en lugar de implementaciones concretas.
+   - La clase Caja depende de la interfaz Enser para representar los artículos de mudanza, proporcionando flexibilidad para trabajar con diferentes tipos de artículos.
+   - La clase Mudanza depende de la clase Caja, pero no está acoplada a una implementación específica, lo que facilita la extensión y el mantenimiento del código.
+
+El código para este ejercicio se encuentra en el directorio `src/ejercicio-1`
+
 
 ## Ejercicio 2 - Facturas en diferentes formatos
 
+
+Para llevar a cabo el desarrollo de este ejercicio, hemos creado las siguientes clases o interfaces:
+
+1. Interfaz Factura:
+
+   - Define las propiedades necesarias para representar una factura, como el vendedor, el comprador, el importe, el concepto, el tipo de fichero (PDF o HTML), los impuestos, el total y la fecha.
+
+2. Clase Facturacion:
+
+   - Administra un conjunto de facturas.
+   - Permite añadir y eliminar facturas, así como mostrarlas en el formato correspondiente (PDF o HTML).
+
+3. Clase Pdf (Factura en formato PDF):
+
+   - Implementa la interfaz Factura.
+   - Representa una factura en formato PDF.
+   - Tiene métodos para obtener los detalles de la factura y para generarla en formato PDF.
+
+4. Clase Html (Factura en formato HTML):
+
+   - Implementa la interfaz Factura.
+   - Representa una factura en formato HTML.
+   - Al igual que la clase Pdf, proporciona métodos para obtener los detalles de la factura y para generarla en formato HTML.
+
+El código sigue los principios SOLID de la siguiente manera:
+
+1. Principio de Responsabilidad Única (SRP):
+
+   - Cada clase tiene una única responsabilidad: la interfaz define la estructura de una factura, las clases Pdf y Html implementan esa estructura y la clase Facturacion gestiona la colección de facturas.
+
+2. Principio Abierto/Cerrado (OCP):
+
+   - El código está diseñado para ser extensible. Se pueden añadir nuevos tipos de facturas en el futuro sin necesidad de modificar las clases existentes.
+
+3. Principio de Inversión de Dependencias (DIP):
+
+   - Las clases dependen de abstracciones (la interfaz Factura) en lugar de implementaciones concretas, lo que facilita la extensión y el mantenimiento del código.
+
+El código de este ejercicio se puede encontrar en el directorio `src/ejercici-2`.
 
 ## Ejercicio 3 - Gestor de ficheros
 
